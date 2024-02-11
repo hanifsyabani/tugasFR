@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/output.css" rel="stylesheet" />
-    <link rel="icon" href="./src/assets/tailwind.png">
+    <link rel="icon" href="./src/assets/tailwind.png" />
     <title>Tailwind Task</title>
   </head>
   <body class="font-[poppins]">
@@ -15,10 +15,10 @@
 
       <div class="flex justify-center items-center gap-14">
         <ul class="flex justify-center items-center gap-10 text-gray-500">
-          <li>Home</li>
-          <li>Template</li>
-          <li>Price</li>
-          <li>Help</li>
+          <li class="hover:text-blue-500 cursor-pointer">Home</li>
+          <li class="hover:text-blue-500 cursor-pointer">Template</li>
+          <li class="hover:text-blue-500 cursor-pointer">Price</li>
+          <li class="hover:text-blue-500 cursor-pointer">Help</li>
         </ul>
         <div
           class="bg-orange-500 rounded-md text-center p-2 text-white font-bold text-sm hover:bg-orange-600"
@@ -36,7 +36,7 @@
         <div class="w-[90%] pl-40">
           <div>
             <p class="text-gray-400">DESIGN INSPIRATION</p>
-            <h1 class="text-4xl font-bold max-w-lg py-8 leading-normal">
+            <h1 class="text-4xl font-bold max-w-lg py-8 leading-10">
               Achieve Your Business Goals Faster with Our Website Services
             </h1>
             <button
@@ -68,11 +68,16 @@
       </div>
     </section>
 
+    <!-- Text Section -->
     <section class="bg-white">
       <div
-        class="bg-gradient-to-b from-[#FFF4D4] to-white w-[90%] mx-auto mt-32 p-8 rounded-lg relative"
+        class="bg-gradient-to-b from-[#FFF4D4] to-white lg:w-[73rem] mx-auto mt-32 p-8 rounded-lg relative"
       >
-        <img src="./src/assets/Vector 2.png" alt="" class="absolute top-0 right-0" />
+        <img
+          src="./src/assets/Vector 2.png"
+          alt=""
+          class="absolute top-0 right-0"
+        />
         <h2 class="text-lg text-gray-700">Design Concept</h2>
         <h1 class="text-4xl font-bold max-w-xl py-6">
           Optimize Your Studio's Website with the Perfect Design
@@ -126,6 +131,77 @@
                   secure, up-to-date, and performing at its best.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section>
+      <div class="px-14 mt-28">
+        <div class="flex justify-between items-center">
+          <h1 class="text-3xl font-bold max-w-sm">
+            Explore Our Team's Expertise
+          </h1>
+          <a href="#">
+            <p class="underline text-blue-500">Experienced team ></p>
+          </a>
+        </div>
+        <div class="flex justify-center items-center mt-20 gap-14">
+          <div
+            class="shadow-2xl rounded-md w-[20rem] hover:scale-105 transition-all cursor-pointer group"
+          >
+            <div class="px-10">
+              <h3 class="text-2xl font-semibold">Audit</h3>
+              <p class="py-10">
+                Audit involves a systematic examination of processes, systems,
+                or records to verify their accuracy, effectiveness, or
+                compliance with established standards. It aims to ensure
+                transparency, accountability, and reliability
+              </p>
+            </div>
+
+            <hr class="border border-gray-300" />
+            <div class="w-full group-hover:bg-primary transition-all">
+              <p class="px-10 py-4 text-gray-500">Experienced team</p>
+            </div>
+          </div>
+          <div
+            class="shadow-2xl rounded-md w-[20rem] hover:scale-105 transition-all cursor-pointer group"
+          >
+            <div class="px-10">
+              <h3 class="text-2xl font-semibold">Teamwork</h3>
+              <p class="py-10">
+                Teamwork refers to the collaborative effort of individuals
+                working together towards a common goal. It involves effective
+                communication and mutual support among team members
+              </p>
+            </div>
+            <hr class="border border-gray-300" />
+            <div class="w-full group-hover:bg-blue-500 transition-all">
+              <p class="px-10 py-4 text-gray-500 group-hover:text-white">
+                Experienced team
+              </p>
+            </div>
+          </div>
+          <div
+            class="shadow-2xl rounded-md w-[20rem] group hover:scale-105 transition-all cursor-pointer"
+          >
+            <div class="px-10">
+              <h3 class="text-2xl font-semibold">Created</h3>
+              <p class="py-10">
+                Create encompasses the process of generating new ideas,
+                concepts, or products through innovation and skillful execution.
+                It involves problem-solving to produce something unique and
+                valuable.
+              </p>
+            </div>
+            <hr class="border border-gray-300" />
+            <div class="group-hover:bg-orange-500 transition-all">
+              <p class="px-10 py-4 text-gray-500 group-hover:text-white">
+                Experienced team
+              </p>
             </div>
           </div>
         </div>
