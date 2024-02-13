@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-link {
+  right: -100%;
+}
+
+.nav-link.show {
+  right: 0;
+}

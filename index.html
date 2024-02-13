@@ -9,13 +9,18 @@
   </head>
   <body class="font-[poppins]">
     <nav
-      class="flex justify-between items-center w-full px-10 py-4 fixed z-10 bg-[#FFF4D4] shadow-xl"
+      class="flex justify-between items-center w-full px-10 py-4 fixed z-20 bg-[#FFF4D4] shadow-xl"
     >
       <img src="./src/assets/Space.png" alt="" class="w-20" />
-
-      <div class="flex justify-center items-center gap-14">
-        <ul class="flex justify-center items-center gap-10 text-gray-500">
-          <li class="hover:text-blue-500 cursor-pointer">Home</li>
+      <div
+        class="lg:flex hidden justify-center items-center lg:gap-14 transition-all"
+      >
+        <ul class="lg:flex justify-center items-center gap-10 text-gray-500">
+          <li
+            class="hover:text-blue-500 cursor-pointer mb-4 lg:mb-0 lg:text-md"
+          >
+            Home
+          </li>
           <li class="hover:text-blue-500 cursor-pointer">Template</li>
           <li class="hover:text-blue-500 cursor-pointer">Price</li>
           <li class="hover:text-blue-500 cursor-pointer">Help</li>
@@ -25,6 +30,42 @@
         >
           <button>Get in Touch</button>
         </div>
+      </div>
+
+      <div
+        class="lg:hidden justify-center items-center lg:gap-14 absolute top-full bg-white h-screen w-[70%] p-5 transition-all nav-link"
+      >
+        <ul class="lg:flex justify-center items-center gap-10 text-gray-500">
+          <li
+            class="hover:text-blue-500 cursor-pointer mb-4 text-lg lg:mb-0 lg:text-md"
+          >
+            Home
+          </li>
+          <li
+            class="hover:text-blue-500 cursor-pointer mb-4 text-lg lg:mb-0 lg:text-md"
+          >
+            Template
+          </li>
+          <li
+            class="hover:text-blue-500 cursor-pointer mb-4 text-lg lg:mb-0 lg:text-md"
+          >
+            Price
+          </li>
+          <li
+            class="hover:text-blue-500 cursor-pointer mb-4 text-lg lg:mb-0 lg:text-md"
+          >
+            Help
+          </li>
+        </ul>
+        <div
+          class="bg-orange-500 rounded-md text-center p-2 text-white font-bold text-sm hover:bg-orange-600"
+        >
+          <button>Get in Touch</button>
+        </div>
+      </div>
+
+      <div class="lg:hidden cursor-pointer menu">
+        <img src="./src/assets/menu.svg" class="w-6 h-6" />
       </div>
     </nav>
 
@@ -71,7 +112,7 @@
     <!-- Text Section -->
     <section class="bg-white">
       <div
-        class="bg-gradient-to-b from-[#FFF4D4] to-white lg:w-[73rem] mx-auto lg:mt-32 mt-56 p-8 rounded-lg relative"
+        class="bg-gradient-to-b from-[#FFF4D4] to-white lg:w-[73rem] mx-auto lg:mt-32 mt-64 p-8 rounded-lg relative"
       >
         <img
           src="./src/assets/Vector 2.png"
@@ -179,7 +220,7 @@
             </div>
 
             <hr class="border border-gray-300" />
-            <div class="w-full group-hover:bg-primary transition-all">
+            <div class="w-full group-hover:bg-[#f4eb9c] transition-all">
               <p class="px-10 py-4 text-gray-500">Experienced team</p>
             </div>
           </div>
@@ -336,7 +377,7 @@
       </div>
     </section>
 
-    <!--  -->
+    <!-- CTA Section -->
     <section>
       <div class="mt-44 container">
         <div
@@ -410,5 +451,7 @@
         <p class="text-white text-sm">Terms of Service</p>
       </div>
     </footer>
+
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
